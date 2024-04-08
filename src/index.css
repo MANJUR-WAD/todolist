@@ -11,8 +11,6 @@ body {
   width: 100%;
   background: linear-gradient(black,white);
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
   padding: 5px;
 }
 
@@ -27,18 +25,7 @@ h1{
   background-color: bisque;
   padding: 10px;
   border-radius: 10px;
-  margin: 20px 0;
-}
-
-@media(max-width:600px){
-  .container-todo{
-    width: 100vw;
-  }
-
-  .todo-list-wrapper{
-    width: 100%;
-  }
-  
+  margin: 20px auto;
 }
 
 .container-todo form{
@@ -71,6 +58,7 @@ h1{
 .todo-list-wrapper{
   height: calc(100vh - 200px);
   width: 500px;
+  margin: 0 auto;
   overflow: auto;
   padding: 0 5px;
 }
@@ -112,3 +100,16 @@ h1{
 .remove-btn i{
   color: crimson;
 }
+
+@media(max-width:600px){
+  .container-todo{
+    width: 90%;
+  }
+
+  .todo-list-wrapper{
+    width: 90%;
+  }
+  
+}
+
+
